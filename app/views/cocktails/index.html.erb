@@ -1,0 +1,8 @@
+<h1>Cocktails#index</h1>
+<p>Find me in app/views/cocktails/index.html.erb</p>
+<% @cocktails.each do |cocktail| %>
+  <%= link_to cocktail.name, cocktail_path(cocktail) %>
+<% end %>
+<%= cl_image_tag("ulkrphurhcsnijg7zsr2",
+      width: 400, height: 300, crop: :fill) %>
+
